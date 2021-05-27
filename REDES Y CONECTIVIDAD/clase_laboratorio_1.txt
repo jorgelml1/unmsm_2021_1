@@ -1,0 +1,86 @@
+LABORATORIO 1
+ROSSINA ISABEL GONZALES CALIENES
+
+-ARQUITECTURA DE RED
+Conjunto de capas y protocolos que permiten la comunicacion entre  computadoras
+
+¿Por qué utilizar un modelo dividio en capas?
+
+Reduce la complejidad
+Asegura la interoperatividad de la tecnologia
+Simplifica la enseñanza y el aprendizaje
+OSI - TCP/IP(Más exito)
+
+Protocolo: Comunicacion par a par.
+
+Comunicacion vertical: Comunicacion real
+
+Comunicacion horizontal: Para los procesos pares la comunicacion es horizontal
+(Comunicacion virtual)
+
+Entidades: Son los elemntos activos que envian y reciben informacion-
+
+Protocolos: Son las normals o convenciones que se llevan a cabo entre la entidad pares. Dicen como implementar los servicios.Pueden cambiar.
+	- Funciones
+	
+	Encapsulamiento: Al pasar datos de una capa a otra, se inserta una informacion de control
+		PDU = DATOS+INFORMACION DE CONTROL
+		Cabecera!
+
+	APLICACION					
+	PRESENTACION
+	SESION
+	TRANSPORTE			ENCABEZAMIENTO DE SERVICIOS DE TRANSPORTE + PDU de Capa de Transporte(Segmento o datagrama)
+	Red					"" Servicios de red + PDU Capa de red PAQUETES
+	ENLACE DE DATOS 	"" Servicios de enlace  de datos + PDU Capa ED Trama Frame
+	FISICA
+
+	Segmentacion:
+
+		Ventajas: No permite monopolizacion del medio. Mejor control de errores y recuperacion.
+		Desventajas: Aumenta la informacion de control. Mas tiempo de procesamiento de paquetes pequeños.
+
+	Flujo de informacion:
+
+	Control de conexion:
+		- No orientados a la conexion
+		- Orientados a la conexion
+
+	Envio ordenado: 
+
+	Control de errores: Se debe gestionarlas perdidas o los errores de datos y control.
+
+	Control de flujo: El receptor limita la cantidad o velocidad de datosque envia el emisor. "Protoocolo de parada y espera"
+
+PRIMITIVAS
+
+PETICION
+INDICACION
+CONFIRMACION
+RESPUESTA
+
+MODELO OSI - INTERCONEXION DE SISTEMAS ABIERTOS
+
+PROPUESTA POR : ISO
+
+PROTOCOLOS DE ALTO NIVEL
+
+APLICACION  ---PROCESO DE RED DE APLICACIONES
+PRESENTACION  ---REPRESENTACION DE DATOS
+SESION         --- COMUNICACION ENTRE HOSTS
+TRANSPORTE    ---CONEXION DE EXTREMO A EXTREMO
+red            --- Direccionamiento y mejor ruta
+ENLACE DE datos  --acceso a medios
+FISICA         -- Transmision binaria
+--------------------------------------
+
+MODELO DE REFERENCIA TCP /IP
+
+Desarrollado por el DOD Departamento de defensade los Estados Unidos
+
+APLICACION --- CORRESPONDE A LAS APLIACIONES DISPONIBLES PARA LOS USUARIOS COMO HTTP, DNS, SMTP, FTP, SNMP. TELNET
+TRANSPORTE  ----- UTILZA EL PROTOCLO TCP, ES CONFIABLE Y ORIENTAD A LACONEXION, UDP 
+INTERNET   --- PROTOCOLO IP SE ENCARGA DEL DIRECCIONAMIENTO Y EL ENCAMINAMIENTO DE LOS DATOS, NO ES FIABLE
+INTERFAZ DE RED   ---TIENDE A AGRUPAR EL NIVEL FISICO CON EL NIVEL DE ENLACE DE DATOSDEL MODELOS OSI
+
+
